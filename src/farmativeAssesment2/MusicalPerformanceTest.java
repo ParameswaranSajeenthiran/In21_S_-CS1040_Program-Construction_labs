@@ -201,7 +201,9 @@ class Artist {
 }
 
 
-
+interface  IBackUp {
+    public  void backup();
+}
 interface Singer {
     public void sing();
 
@@ -250,9 +252,7 @@ class BackUpSinger extends Artist implements  IBackUp ,Singer{
 }
 
 
-interface  IBackUp {
-    public  void backup();
-}
+
 
 
 class MainArtist extends Artist implements  Singer{
