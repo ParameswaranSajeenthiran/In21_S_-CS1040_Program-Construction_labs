@@ -24,8 +24,8 @@ public class MusicalPerformanceTest {
 
 
         LiveMusicalPerformance liveMusicalPerformance=new LiveMusicalPerformance("Glendale","2023","Eras Tour",
-
-                new MainArtist("Taylor Swift"),musicTracks,backUpDancers,backUpSingers );
+                                                                                        new MainArtist("Taylor Swift"),
+                                                                                        musicTracks,backUpDancers,backUpSingers );
 
         liveMusicalPerformance.startPerformance();
     }
@@ -36,7 +36,6 @@ public class MusicalPerformanceTest {
 
 
 }
-
 
 abstract class MusicalPerformance {
     private String venue;
@@ -264,4 +263,5 @@ class MainArtist extends Artist implements  Singer{
         System.out.println("This is the method sing in the class MainArtist"  );
 
     }
+
 }
